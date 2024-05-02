@@ -1,3 +1,7 @@
+import {HiOutlineMail} from "react-icons/hi";
+import {IoLogoGithub} from "react-icons/io"
+import {CiLinkedin} from "react-icons/ci"
+
 export const SKILLS = [
     {
         title: "Frontend",
@@ -87,15 +91,42 @@ export const WORK_EXPERIENCE = [
 
 export const CONTACT_DETAILS = [
     {
-        iconUrl: "./assets/imgs/contact-icons/email.png",
+        iconUrl: <HiOutlineMail size={30} />,
         link: "sullaimaan@gmail.com"
     },
     {
-        iconUrl: "./assets/imgs/contact-icons/github.png",
+        iconUrl: <IoLogoGithub size={30} />,
         link: "https://github.com/SulimanFURC"
     },
     {
-        iconUrl: "./assets/imgs/contact-icons/linkedin.png",
+        iconUrl: <CiLinkedin size={30} />,
         link: "https://www.linkedin.com/in/suliman-munawar-khan-334a05109/"
     },
 ]
+
+export const navLinks = [
+    {
+      title: "Home",
+      path: "#hero",
+    },
+    {
+      title: "About",
+      path: "#about",
+    },
+    {
+      title: "Skills",
+      path: "#skills",
+    },
+    {
+      title: "Projects",
+      path: "#projects",
+    },
+    {
+      title: "Experience",
+      path: "#work-experience",
+    },
+    {
+      title: "Contact",
+      path: "#contact",
+    },
+];

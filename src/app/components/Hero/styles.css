@@ -159,6 +159,7 @@
     }
     .hero-img > div > img {
         width: 16rem;
+        margin-right: 3rem;
     }
     .tech-icon {
         width: 3.3rem;
