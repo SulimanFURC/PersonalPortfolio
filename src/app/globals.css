@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #fff;
     background-color: #060417;
@@ -22,4 +26,15 @@ body {
     .container {
         padding: 0 1.5rem;
     }
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #6751b9;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #1c1c1c;
 }

@@ -11,6 +11,13 @@ const Navbar = () => {
     const toggleMenu = () =>{
         setOpenMenu(!openMenu)
     }
+    const scrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <>
         <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
@@ -24,7 +31,7 @@ const Navbar = () => {
                         </li>
                     ))}
 
-                    <button className="contact-btn" onClick={() => {}}>Hire Me</button>
+                    <button className="contact-btn" onClick={() => {scrollToContact()}}>Hire Me</button>
                </ul>
                <button className="menu-btn" onClick={() => toggleMenu()}>
                     <span style={{fontSize: "1rem"}}> 

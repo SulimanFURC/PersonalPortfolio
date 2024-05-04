@@ -110,6 +110,13 @@ export const PROJECTS = [
     },
 ]
 
+export const PROJECT_DESC = {
+    desc: `With 4 years of frontend development expertise, I excel in Angular 10+, React, NextJS, and SharePoint. 
+    Proficient in integrating Power Automate and Virtual Agent for enhanced functionality. From simple portfolio websites 
+    to complex ERP and construction management applications, I deliver top-notch solutions. Below are some of my projects`
+}
+
+
 export const WORK_EXPERIENCE = [
     {
         title: "Angular Consultant",
