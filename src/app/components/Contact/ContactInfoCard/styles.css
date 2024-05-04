@@ -1,13 +1,5 @@
 .contact-details-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #130f2a ;
-    border-radius: 0.65rem;
-    border: 1px solid #6751b9;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+    height: fit-content;
 }
 
 .contact-details-card .icon {
@@ -19,11 +11,16 @@
     border-radius: 0.5rem;
     background: #3d3072 ;
 }
+.contact-item {
+    text-decoration: none;
+    color: white;
+}
+.icon svg {
+    transition: all 0.3s ease;
+}
 
-.icon img {
-    width: 2.8rem;
-    height: auto;
-    object-fit: contain;
+.icon svg:hover {
+    transform: translateY(-0.5rem);
 }
 
 .contact-details-card p {

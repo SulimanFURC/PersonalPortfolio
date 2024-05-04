@@ -8,11 +8,11 @@ const ContactMe = () => {
         <section className="contact-container" id="contact">
             <h5>Contact Me</h5>
             <div className="contact-content">
-                <div style={{flex: 1}}>
+                <div className="contact-info">
                     {CONTACT_DETAILS.map((item, index) => (
                         <ContactInfoCard 
                             iconUrl={item.iconUrl}
-                            text={item.link}
+                            link={item.link}
                             key={index}
                         />
                     ))}

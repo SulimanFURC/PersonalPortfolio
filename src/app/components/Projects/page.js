@@ -5,7 +5,6 @@ import "./styles.css";
 import Link from "next/link";
 
 const Projects = () => {
-    console.log("Desc: ", PROJECT_DESC)
     return(
         <section className="projects-container" id="projects">
             <h5>Projects</h5>

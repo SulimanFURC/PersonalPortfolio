@@ -214,7 +214,7 @@ export const WORK_EXPERIENCE = [
 export const CONTACT_DETAILS = [
     {
         iconUrl: <HiOutlineMail size={30} />,
-        link: "sullaimaan@gmail.com"
+        link: "mailto:sullaimaan@gmail.com"
     },
     {
         iconUrl: <IoLogoGithub size={30} />,
@@ -230,10 +230,6 @@ export const navLinks = [
     {
       title: "Home",
       path: "#hero",
-    },
-    {
-      title: "About",
-      path: "#about",
     },
     {
       title: "Skills",
