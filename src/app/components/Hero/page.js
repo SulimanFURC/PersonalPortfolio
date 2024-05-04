@@ -3,6 +3,14 @@ import { TypeAnimation } from "react-type-animation";
 import "./styles.css";
 
 const Hero = () => {
+
+    const downloadCV = () => {
+        const link = document.createElement('a');
+        link.href = "./assets/SulimanResume.pdf";
+        link.download = 'Suliman-Munawar-Resume.pdf'; // Set the filename for the downloaded file
+        link.target = '_blank'; // Open the link in a new tab (optional)
+        link.click();
+      };
     return(
         <section className="hero-container" id="hero">
             <div className="hero-content">
@@ -23,6 +31,7 @@ const Hero = () => {
                     />
                 </h2>
                 <p>Frontend Developer | UI/UX | Angular | React | NextJs</p>
+                <button className="btn-cv" onClick={downloadCV}>Download My CV</button>
             </div>
             <div className="hero-img">
                 <div>

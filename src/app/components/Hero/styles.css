@@ -29,6 +29,28 @@
     flex: 1;
 }
 
+.btn-cv {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 2rem;
+}
+.btn-cv:hover {
+    color: #a993fe;
+    background: #000;
+    outline: 1.5px solid #a993fe;
+}
+
 .hero-content h2 {
     font-size: 3.8rem;
     font-weight: 600;
