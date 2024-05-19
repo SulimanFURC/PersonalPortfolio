@@ -25,6 +25,10 @@
     margin-bottom: 1.3rem;
 }
 
+.work-experience-card ul { 
+    max-height: 140px;
+    overflow: auto
+}
 .work-experience-card ul li {
     list-style: none;
     font-size: 0.8rem;
