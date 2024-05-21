@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100');
 
+:root {
+    --bg-body: #060417;
+    --bg-primary: #a993fe;
+    --bg-secondary: #7e61e7;
+    --light-purple: #7c66e3;
+    --text: white;
+    --border: #6751b9;
+    --bg-black: #2e2c2c;
+    --bg-white: #e6e3e3;
+    --bg-experience-card: #130f2a;
+}
+
+[data-theme="light"] {
+    --bg-body: white;
+    --text: #060417;
+    --light-purple: white;
+    --bg-experience-card: #ffffff;
+    --border: #b0afb3;
+  }
+
 * { 
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -12,8 +32,8 @@ html {
 }
 
 body {
-    color: #fff;
-    background-color: #060417;
+    color: var(--text);
+    background-color: var(--bg-body);
 }
 
 .container {
@@ -32,7 +52,7 @@ body {
     height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #6751b9;
+    background: var(--border);
     border-radius: 5px;
 }
 ::-webkit-scrollbar-track {

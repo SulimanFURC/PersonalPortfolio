@@ -36,7 +36,7 @@
     text-decoration: none;
     font: 0.9rem;
     font-weight: 500;
-    color: #fff;
+    color: var(--text);
     position: relative;
     cursor: pointer;
 }
@@ -45,7 +45,7 @@
     content: " ";
     width: 2rem;
     height: 0.2rem;
-    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    background: linear-gradient(90deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     border-radius: 0.5rem;
     position: absolute;
     bottom: -0.6rem;
@@ -66,7 +66,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    background: linear-gradient(90deg,#a993fe 0%, #7e61e7 100%);
+    background: linear-gradient(90deg,var(--bg-primary) 0%, var(--bg-secondary) 100%);
     padding: 0.6rem 2rem;
     border: none;
     outline: 1.5px solid transparent;
@@ -76,9 +76,9 @@
 }
 
 .contact-btn:hover{
-    color: #a993fe;
+    color: var(--bg-primary);
     background: #000;
-    outline: 1.5px solid #a993fe;
+    outline: 1.5px solid var(--bg-primary);
 }
 
 .menu-btn {
@@ -91,7 +91,7 @@
     border: none;
     border-radius: 0.4rem;
     color: #fff;
-    background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
+    background: linear-gradient(90deg, var(--bg-primary) -0.13%, var(--bg-secondary) 99.87%);
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -99,10 +99,59 @@
 }
 
 .menu-btn:hover {
-    color: #a993fe;
+    color: var(--bg-primary);
     background:#000;
-    border: 1px solid #a993fe;
+    border: 1px solid var(--bg-primary);
 }
+
+.theme-wrapper {
+    display: flex;
+}
+
+.ThemeToggle {
+    appearance: none;
+    width: 62px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: var(--bg-white);
+    transition: background-color ease 0.3s;
+}
+
+.ThemeToggle::before{
+    content: url('https://shivanarrthine.com/public/images/icons/moon.svg');
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    background: var(--bg-black);
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    text-indent: 4px;
+    line-height: 32px;
+    word-spacing: 37px;
+    color: #fff;
+    white-space: nowrap;
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+
+.ThemeToggle:checked{
+    background-color: var(--bg-black);
+}
+.ThemeToggle:checked::before{
+    left: 32px;
+    content: url('https://shivanarrthine.com/public/images/icons/sun.svg');
+    background: var(--bg-white);
+}
+      
+ 
 
 @media (max-width: 425px) {
     .logo {

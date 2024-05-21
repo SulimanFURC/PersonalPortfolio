@@ -10,7 +10,7 @@
     width: 28.125rem;
     height: 28.125rem;
     border-radius: 28.125rem;
-    background: #7c66e3;
+    background: var(--light-purple);
     position: absolute;
     z-index: -1;
     filter: blur(225px);
@@ -36,7 +36,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    background: linear-gradient(90deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     padding: 0.6rem 2rem;
     border: none;
     outline: 1.5px solid transparent;
@@ -46,9 +46,9 @@
     margin-top: 2rem;
 }
 .btn-cv:hover {
-    color: #a993fe;
+    color: var(--bg-primary);
     background: #000;
-    outline: 1.5px solid #a993fe;
+    outline: 1.5px solid var(--bg-primary);
 }
 
 .hero-content h2 {

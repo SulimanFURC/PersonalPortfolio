@@ -16,10 +16,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #6751b9;
+    color: var(--border);
     border-radius: 0.65rem;
-    border: 1px solid #6751b9;
-    background: #130f2a;
+    border: 1px solid var(--border);
+    background: var(--bg-experience-card);
     position: absolute;
     top: 55%;
     z-index: 2;

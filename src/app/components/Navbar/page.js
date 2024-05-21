@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav/page";
 import NavLink from "./NavLinks/page";
 import { navLinks } from "@/app/utils/data";
 
-const Navbar = () => {
+const Navbar = ({theme, toggleTheme}) => {
     const [openMenu, setOpenMenu] = useState(false)
 
     const toggleMenu = () =>{
@@ -32,6 +32,9 @@ const Navbar = () => {
                     ))}
 
                     <button className="contact-btn" onClick={() => {scrollToContact()}}>Hire Me</button>
+                    <div class="theme-wrapper">
+                        <input id="themeSwitcher" class="ThemeToggle" type="checkbox" checked={theme === 'dark'} onChange={toggleTheme} />
+                    </div>
                </ul>
                <button className="menu-btn" onClick={() => toggleMenu()}>
                     <span style={{fontSize: "1rem"}}> 

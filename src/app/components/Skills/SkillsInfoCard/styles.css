@@ -1,8 +1,8 @@
 .skills-info-card{
     min-height: 23rem;
     border-radius: 0.65rem;
-    border: 1px solid #6751b9;
-    background: rgba(22,17,47, 0.398);
+    border: 1px solid var(--border);
+    background: var(--bg-experience-card);
     backdrop-filter: blur(1rem);
 }
 
@@ -14,7 +14,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-     border-bottom: 1.5px solid #6751b9;
+    border-bottom: 1.5px solid var(--border);
 }
 
 .skills-info-content {
@@ -33,7 +33,7 @@
 }
 
 .skill-info .percentage { 
-    color: #dd8cfa;
+    color: var(--text);
 }
 
 .skill-progress-bg {
@@ -48,7 +48,7 @@
 .skill-progress {
     width: 0%;
     height: 0.5rem;
-    background: linear-gradient(90deg, #ac96ff 0%, #7c5fe6 50%);
+    background: linear-gradient(90deg, var(--bg-primary) 0%, var(--bg-secondary) 50%);
 }
 
 @media (max-width: 1025px) {
