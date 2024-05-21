@@ -33,6 +33,9 @@
 }
 
 @media (max-width: 768px) {
+    .contact-container::before {
+        right: 0;
+    }
     .contact-content {
         flex-direction: column-reverse;
     }
