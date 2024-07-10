@@ -32,8 +32,8 @@ const Navbar = ({theme, toggleTheme}) => {
                     ))}
 
                     <button className="contact-btn" onClick={() => {scrollToContact()}}>Hire Me</button>
-                    <div class="theme-wrapper">
-                        <input id="themeSwitcher" class="ThemeToggle" type="checkbox" checked={theme === 'dark'} onChange={toggleTheme} />
+                    <div className="theme-wrapper">
+                        <input id="themeSwitcher" className="ThemeToggle" type="checkbox" checked={theme === 'dark'} onChange={toggleTheme} />
                     </div>
                </ul>
                <button className="menu-btn" onClick={() => toggleMenu()}>
