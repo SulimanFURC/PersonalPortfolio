@@ -1,6 +1,7 @@
 "use client";
 import { TypeAnimation } from "react-type-animation";
 import "./styles.css";
+import Image from "next/image";
 
 const Hero = () => {
 
@@ -36,23 +37,23 @@ const Hero = () => {
             <div className="hero-img">
                 <div>
                     <div className="tech-icon">
-                        <img src="./assets/imgs/reactIcon.png" alt="React Icon Image" />
+                        <Image src="/assets/imgs/reactIcon.png" width={100} height={100} alt="React Icon Image" />
                     </div>
-                    <img src="./assets/imgs/HD1.png" alt="React Icon Image"/>
+                    <Image src="/assets/imgs/HD1.png" width={100} height={100} alt="React Icon Image"/>
                 </div>
 
                 <div>
                     <div className="tech-icon">
-                        <img src="./assets/imgs/angularIcon.svg" alt="React Icon Image"/>
+                        <Image src="/assets/imgs/angularIcon.svg" width={100} height={100} alt="React Icon Image"/>
                     </div>
                     <div className="tech-icon">
-                        <img src="./assets/imgs/jsIcon.png" alt="React Icon Image"/>
+                        <Image src="/assets/imgs/jsIcon.png" width={100} height={100} alt="React Icon Image"/>
                     </div>
                     <div className="tech-icon">
-                        <img src="./assets/imgs/webpackIcon.png" alt="React Icon Image"/>
+                        <Image src="/assets/imgs/webpackIcon.png" width={100} height={100} alt="React Icon Image"/>
                     </div>
                     <div className="tech-icon">
-                        <img src="./assets/imgs/mongodbIcon.png" alt="React Icon Image"/>
+                        <Image src="/assets/imgs/mongodbIcon.png" width={100} height={100} alt="React Icon Image"/>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@ import { PROJECTS, PROJECT_DESC } from "@/app/utils/data";
 import ProjectInfoCard from "./ProjectCard/page";
 import "./styles.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Projects = () => {
     return(
@@ -10,7 +11,7 @@ const Projects = () => {
             <h5>Projects</h5>
             <div className="project-description">
                 <div className="projectImg">
-                    <img src="./assets/imgs/project.png" alt="project img " />
+                    <Image src="/assets/imgs/project.png" width={800} height={400} alt="project img " />
                 </div>
                 <div className="project-text">
                     <p>{PROJECT_DESC.desc}</p>
@@ -23,7 +24,7 @@ const Projects = () => {
                             key={item.title}
                             heading={item.title}
                             desc={item.projectDesc}
-                            tech={item.technologies}
+                            tech={item?.technologies}
                             link={item.projectlink}
                         />
                     ))}

@@ -5,7 +5,7 @@ import {CiLinkedin} from "react-icons/ci"
 export const SKILLS = [
     {
         title: "Frontend",
-        icons: "./assets/imgs/Frontend.png",
+        icons: "/assets/imgs/Frontend.png",
         skills: [
             {skill: "HTML5", percentage: "90%"},
             {skill: "CSS SASS/SCSS", percentage: "85%"},
@@ -18,7 +18,7 @@ export const SKILLS = [
 
     {
         title: "Backend",
-        icons: "./assets/imgs/Backend.png",
+        icons: "/assets/imgs/Backend.png",
         skills: [
             {skill: "Node.js", percentage: "55%"},
             {skill: "Express.js", percentage: "50%"},
@@ -27,7 +27,7 @@ export const SKILLS = [
 
     {
         title: "Other Skills",
-        icons: "./assets/imgs/tools.png",
+        icons: "/assets/imgs/tools.png",
         skills: [
             {skill: "Git & GitHub", percentage: "60%"},
             {skill: "Responsive Design", percentage: "85%"},
@@ -42,7 +42,7 @@ export const SKILLS = [
 
     {
         title: "Soft Skills",
-        icons: "./assets/imgs/softSkills.png",
+        icons: "/assets/imgs/softSkills.png",
         skills: [
             {skill: "Problem Solving", percentage: "80%"},
             {skill: "Collaboration", percentage: "85%"},

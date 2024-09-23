@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const NavLink = ({ href, title }) => {
+const NavLink = ({ href = '#', title = 'N Title' }) => {
   return (
     <Link href={href} className="menu-item">
       {title}
