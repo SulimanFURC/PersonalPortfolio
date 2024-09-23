@@ -34,8 +34,8 @@ export const SKILLS = [
             {skill: "JIRA", percentage: "60%"},
             {skill: "SharePoint Development", percentage: "55%"},
             {skill: "RESTful API Integration", percentage: "80%"},
-            {skill: "MS Power Virtual Agent", percentage: "65%"},
-            {skill: "MS Power Automate", percentage: "65%"},
+            {skill: "Microsoft Power Virtual Agent", percentage: "65%"},
+            {skill: "Microsoft Power Automate", percentage: "65%"},
 
         ]
     },
