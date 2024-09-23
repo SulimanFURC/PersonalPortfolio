@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'suliman-munawar'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4D945B50A3B64FA48314737DD3AA1597 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_940C60C4EFCB48EBB10D08912F6673C9 }}
           package: .
